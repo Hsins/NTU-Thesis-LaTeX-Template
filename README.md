@@ -22,33 +22,34 @@
 ## Structures
 
 ```
-.
+├── front
+│   ├── abstract.tex                // 摘要
+│   ├── acknowledgement.tex         // 致謝
+│   └── denotation.tex              // 符號列表
 ├── contents
-│   ├── abstract.tex            // 摘要
-│   ├── acknowledgement.tex     // 致謝
-│   ├── denotation.tex          // 符號列表
-│   ├── chapter-*.tex
+│   ├── chapter-*.tex               // 論文內容
 │   └── ...
-├── figures
+├── back
+│   ├── appendix-*.tex              // 附錄
+│   ├── references.bib              // 參考文獻
 │   └── ...
 ├── fonts
 │   ├── chinese
-│   │   ├── BiauKai.ttf         // 標楷體
-│   │   ├── Arphic-*.ttf        // 文鼎字體
-│   │   ├── CNS-*.ttf           // 全文庫字體
-│   │   ├── MOE-*.ttf           // 教育部字體
-│   │   ├── WHZ-*.ttf           // 王漢宗字體
-│   │   ├── cwTeX-*.ttf         // cwTeX 字體
+│   │   ├── BiauKai.ttf             // 標楷體
+│   │   ├── Arphic-*.ttf            // 文鼎字體
+│   │   ├── CNS-*.ttf               // 全文庫字體
+│   │   ├── MOE-*.ttf               // 教育部字體
+│   │   ├── WHZ-*.ttf               // 王漢宗字體
+│   │   ├── cwTeX-*.ttf             // cwTeX 字體
 │   │   └── ...
 │   └── english
-│       ├── Times New Roman.ttf
+│       ├── Times New Roman-*.ttf   // Times New Roman 字體
 │       └── ...
-├── references
-│   ├── *.bty                   // 文獻格式
-│   └── refs.bib                // 參考文獻
-├── main.tex                    // 主文件
-├── ntusetup.tex                // 模板設定
-├── ntuthesis.cls               // 模板文件
+├── figures
+│   └── ...
+├── main.tex                        // 主文件
+├── ntusetup.tex                    // 模板設定
+├── ntuthesis.cls                   // 模板文件
 └── ...
 ```
 
