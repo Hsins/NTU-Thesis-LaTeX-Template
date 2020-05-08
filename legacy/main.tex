@@ -1,0 +1,132 @@
+% !TEX TS-program = xelatex
+% !BIB program = biber
+% !TEX encoding = UTF-8 Unicode
+
+% --------------------------------------------------
+% 01 選用模板類別 (Class Setting)
+% --------------------------------------------------
+
+% [模板選項]
+%   - Proposal                              論文計劃書
+%   - Master                                碩士論文
+%   - PhD                                   博士論文
+%
+\documentclass[
+	Master,
+	twoside,
+	openright,
+	WangFont]{NTUthesis}
+
+\usepackage{lipsum}
+
+% --------------------------------------------------
+% 02 編譯器檢查 (Compiler Check)
+% --------------------------------------------------
+%
+\usepackage{ifxetex}
+
+\ifxetex{}
+\else{
+	\errmessage{模版：請使用 XeLaTex 來產生論文。}
+	\stop
+}
+\fi
+
+% --------------------------------------------------
+% 03 資料設定 (Setting)
+% --------------------------------------------------
+
+% [校系資訊]
+% - \SchoolName{ZH}{EN}                     學校名稱
+% - \CollegeName{ZH}{EN}                    學院名稱
+% - \InstituteName{ZH}{EN}                  系所名稱
+%
+\SchoolName
+{國立臺灣大學}
+{National Taiwan University}
+
+\CollegeName
+{工學院}
+{College of Engineering}
+
+\InstituteName
+{工業工程學研究所}
+{Institute of Industrial Engineering}
+
+% [論文資訊]
+% - \ThesisTitle{ZH}{EN}                    論文題目
+% - \Author{ID}{ZH}{EN}                     作者資訊
+% - \Advisor{ZH}{EN}                        指導教授
+% - \DOI{Prefix}{Suffix}                    數位識別
+%
+\ThesisTitle
+{國立臺灣大學碩博士畢業論文 LaTex 模版}
+{National Taiwan University (NTU) \\ Thesis/Dissertation Template in LaTeX}
+
+\Author
+{R05546030}
+{彭新翔}
+{Hsin-Hsiang Peng}
+
+\Advisor
+{吳文方}
+{Wen-Fang Wu}
+
+% [日期設定]
+% - OralDate{yyyy}{mm}{dd}                  口試日期
+% - CoverDate{yyyy}{mm}{dd}                 封面日期
+%
+\OralDate{2018}{7}{31}
+\CoverDate{2018}{7}{31}
+
+\begin{document}
+
+% [浮水印與數位識別碼]
+% - \WaterMark{Opacity}{Logo Path}
+% - \InsertDOI{DOI}
+%
+\WaterMark{0.25}{src/seal.png}
+\InsertDOI{10.5566/NTU2018XXXXX}
+
+% [封面與口委會審定書]
+%
+\MakeCover
+\MakeCertification
+
+\setstretch{1.6}
+
+% [謝辭]
+%
+\include{data/ack}
+
+% [摘要]
+%
+\include{data/abstract}
+
+% [生成目錄]
+%
+\MakeTOC
+
+% [符號列表]
+%
+\input{data/denotation}
+
+% [正文]
+%
+\MainBody
+\include{data/chap00}
+
+\cite{Krasnogor2004e}
+
+% [參考文獻]
+%
+\addcontentsline{toc}{chapter}{參考文獻}
+\bibliographystyle{abbrv}
+\bibliography{ref/refs}
+
+% [附錄]
+%
+\begin{Appendix}
+	\input{data/appendix01}
+\end{Appendix}
+\end{document}
