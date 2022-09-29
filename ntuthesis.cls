@@ -682,7 +682,7 @@
         \begin{tikzpicture}[remember picture, overlay]
           \coordinate (WM) at ([xshift=-4.325cm, yshift=-4.325cm] current page.north east);
           \node [scale=1] at (WM) {\includegraphics[width=3.65cm, height=3.65cm]{#2}};
-          \filldraw [fill=white, opacity=1-\the\numexpr#1] (current page.north east) rectangle (current page.south west);
+          \fill [fill=white, opacity=1-\the\numexpr#1] (current page.north east) rectangle (current page.south west);
         \end{tikzpicture}
       \vfill
 }}}}
