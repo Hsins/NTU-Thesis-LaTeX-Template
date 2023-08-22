@@ -737,7 +737,7 @@
         \ntu@author\par\ntu@author@en\par
         \vfill
         指導教授: \ntu@advisor~博士\par
-        Advisor: \ntu@advisor@en~Ph.D.\par
+        Advisor: \ntu@advisor@en,~Ph.D.\par  % 英文姓名無須逗號，但職銜前需要逗號
         \vfill
         中華民國~\ntu@format@date{\ntu@date@zh@digit@short}{\ntu@date}\par
         \ntu@format@date{\ntu@date@en@short}{\ntu@date}
