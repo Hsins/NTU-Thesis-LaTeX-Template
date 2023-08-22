@@ -479,8 +479,8 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{setspace}
 \RequirePackage{graphicx}
-\RequirePackage{tikz}
 \RequirePackage{eso-pic}
+\RequirePackage{tikz}
 \RequirePackage{pdfpages}
 \RequirePackage{tabularx}
 \RequirePackage{booktabs}
