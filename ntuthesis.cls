@@ -42,9 +42,9 @@
 % 變數: 中文翻譯
 % Variables: Translation (Chinese)
 \newcommand{\ntu@verificationletter@zh}{口試委員審定書}
-\newcommand{\ntu@tableofcontents@zh}{目錄}
-\newcommand{\ntu@listoffigures@zh}{圖目錄}
-\newcommand{\ntu@listoftables@zh}{表目錄}
+\newcommand{\ntu@tableofcontents@zh}{目次}
+\newcommand{\ntu@listoffigures@zh}{圖次}
+\newcommand{\ntu@listoftables@zh}{表次}
 \newcommand{\ntu@denotation@zh}{符號列表}
 \newcommand{\ntu@bibliography@zh}{參考文獻}
 \newcommand{\ntu@acknowledgement@zh}{致謝}
@@ -80,7 +80,7 @@
 % 變數: 版面設定
 % Variables: Layouts
 \newcommand{\ntu@geometry@main}{top=3cm, bottom=2cm, left=3cm, right=3cm}
-\newcommand{\ntu@geometry@cover}{top=3cm, bottom=3cm, left=3cm, right=3cm}
+\newcommand{\ntu@geometry@cover}{top=4cm, bottom=3cm, left=3cm, right=3cm}
 
 \newcommand{\ntu@tocvspace}{1em}
 \newcommand{\ntu@tocchaptersize@zh}{4.5em}
@@ -370,7 +370,7 @@
 % Assign variables according to configs.
 \ifthenelse{\equal{\ntu@degreeset}{master}}{
   \newcommand{\ntu@degree}{碩士}
-  \newcommand{\ntu@degree@en}{Master}
+  \newcommand{\ntu@degree@en}{Master's}
   \newcommand{\ntu@type}{論文}
   \newcommand{\ntu@type@en}{Thesis}
 }
